@@ -34,7 +34,19 @@ public class GridScript : MonoBehaviour
     public Rigidbody2D trashrb;
     public GameObject ui;
 
+    public GameData data;
+
     public string curInput = "gravity";
+
+    private AudioSource _audioSource;
+    public AudioClip _pushPlace;
+    public AudioClip _pullPlace;
+    public AudioClip _wallCollision;
+
+    private void Start()
+    {
+        _audioSource = GetComponent<AudioSource>();
+    }
 
     private void Update()
     {
@@ -58,7 +70,7 @@ public class GridScript : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.R))
         {
             ui.GetComponent<UIController>().curLevel.attempts += 1;
-            SceneManager.LoadScene(ui.GetComponent<UIController>().levelNum);
+            SceneManager.LoadScene(2*data.curLevel+1);
         }
     }
 
@@ -68,11 +80,20 @@ public class GridScript : MonoBehaviour
         {
             PlacePushTile(pos);
             ui.GetComponent<UIController>().pushNums -= 1;
+            _audioSource.clip = _pushPlace;
+            _audioSource.Play();
         }
         else if(curInput == "pull" && ui.GetComponent<UIController>().pullNums > 0)
         {
             PlacePullTile(pos);
             ui.GetComponent<UIController>().pullNums -= 1;
+            _audioSource.clip = _pullPlace;
+            _audioSource.Play();
+        }
+        else if(curInput == "gravity")
+        {
+            _audioSource.clip = _wallCollision;
+            _audioSource.Play();
         }
     }
 
@@ -117,30 +138,25 @@ public class GridScript : MonoBehaviour
         int closestIndex = 5;
         for(int i=0; i < edges.Length; i++)
         {
-            Debug.Log(Vector3.Distance(pos, edges[i]));
             if (Vector3.Distance(pos, edges[i])<minDist)
             {
                 if (i == 0 && groundMap.HasTile(tilePos+new Vector3Int(0,1,0)))
                 {
-                    Debug.Log(i);
                     minDist = Vector3.Distance(pos, edges[i]);
                     closestIndex = i;
                 }
                 if (i == 1 && groundMap.HasTile(tilePos + new Vector3Int(1, 0, 0)))
                 {
-                    Debug.Log(i);
                     minDist = Vector3.Distance(pos, edges[i]);
                     closestIndex = i;
                 }
                 if (i == 2 && groundMap.HasTile(tilePos + new Vector3Int(0, -1, 0)))
                 {
-                    Debug.Log(i);
                     minDist = Vector3.Distance(pos, edges[i]);
                     closestIndex = i;
                 }
                 if (i == 3 && groundMap.HasTile(tilePos + new Vector3Int(-1, 0, 0)))
                 {
-                    Debug.Log(i);
                     minDist = Vector3.Distance(pos, edges[i]);
                     closestIndex = i;
                 }
@@ -231,6 +247,7 @@ public class GridScript : MonoBehaviour
 
     public void BeatLevel()
     {
-        SceneManager.LoadScene(ui.GetComponent<UIController>().levelNum + 1);
+        data.score += ui.GetComponent<UIController>().curLevel.attempts+1;
+        SceneManager.LoadScene((data.curLevel+1)*2);
     }
 }

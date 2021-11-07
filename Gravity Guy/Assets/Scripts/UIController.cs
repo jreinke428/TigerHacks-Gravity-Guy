@@ -22,7 +22,7 @@ public class UIController : MonoBehaviour
         curLevel = levels[data.curLevel];
         levelNum = curLevel.levelNum;
         attempts = curLevel.attempts;
-        pushNums = curLevel.pullNum;
+        pushNums = curLevel.pushNum;
         pullNums = curLevel.pullNum;
         levelNumText.GetComponent<TextMeshProUGUI>().text = levelNum.ToString();
     }

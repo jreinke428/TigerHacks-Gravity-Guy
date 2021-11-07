@@ -9,9 +9,27 @@ EditorBuildSettings:
     path: Assets/Scenes/StartMenu.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
-    path: Assets/Scenes/LevelSelector.unity
-    guid: 8c0ed168f52da4b30a8b6d97874791d3
-  - enabled: 1
+    path: 
+    guid: 00000000000000000000000000000000
+  - enabled: 0
     path: Assets/Scenes/Game.unity
     guid: 8ac3aa56edf5846df921215bfa2e058a
+  - enabled: 1
+    path: Assets/Scenes/Level1.unity
+    guid: 2f26854ea0c0c4aecbf957f2cc215613
+  - enabled: 1
+    path: Assets/Scenes/BeatLevel1.unity
+    guid: a7af1187e24774c149df25b3417841a5
+  - enabled: 1
+    path: Assets/Scenes/Level2.unity
+    guid: b3e540a959cc7465bb6a816a28a1f992
+  - enabled: 1
+    path: Assets/Scenes/BeatLevel2.unity
+    guid: 863b4b8fc27f041838c4807906cbc3ff
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 64f3e0856301f4427b7b35b0751cd198
+  - enabled: 1
+    path: Assets/Scenes/BeatLevel3.unity
+    guid: 5890b8bffc5e74d6ca98be5b71839c4e
   m_configObjects: {}

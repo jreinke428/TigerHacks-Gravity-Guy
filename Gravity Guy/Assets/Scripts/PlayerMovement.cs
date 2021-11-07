@@ -19,6 +19,16 @@ public class PlayerMovement : MonoBehaviour
     public GameObject gun;
     public Animator animator;
 
+    private AudioSource _audioSource;
+    public AudioClip _jump;
+    public AudioClip _shoot;
+
+
+    void Start()
+    {
+        _audioSource = GetComponent<AudioSource>();
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -48,6 +58,8 @@ public class PlayerMovement : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.W) && !jumping)
         {
+            _audioSource.clip = _jump;
+            _audioSource.Play();
             jumping = true;
             rb.velocity = new Vector2(0f, jumpSpeed);
         }
@@ -81,6 +93,8 @@ public class PlayerMovement : MonoBehaviour
             var b = Instantiate(bullet, gun.transform.position, gun.transform.rotation);
             b.GetComponent<Rigidbody2D>().AddForce(b.transform.right * bulletForce, ForceMode2D.Impulse);
             shooting = true;
+            _audioSource.clip = _shoot;
+            _audioSource.Play();
         }
     }
 

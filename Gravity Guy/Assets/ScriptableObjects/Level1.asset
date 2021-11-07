@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Level1
   m_EditorClassIdentifier: 
   levelNum: 1
-  attempts: 1
+  attempts: 0
   pushNum: 2
-  pullNum: 2
+  pullNum: 0
