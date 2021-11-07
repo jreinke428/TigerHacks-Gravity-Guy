@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: PullWavesLeft
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 376225127550365036, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: -7576956247735579574, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: -7343910284051941282, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: 7791924721350330834, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: 8216756739880133075, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: 2685360562922270721, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: -9054658381033922840, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: -4500570782455129541, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: 532063136899004, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: -2441105541000405643, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: -5402379937366044692, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: 3576421735375139863, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: 7050678521889706426, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: -7013463437168235460, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: 1178999163175087724, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: 8825829757056048359, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  m_MinSpeed: 1
+  m_MaxSpeed: 1
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 1

@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
+  m_Name: PushWavesUp
+  m_EditorClassIdentifier: 
+  m_AnimatedSprites:
+  - {fileID: 2467848289043441744, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: 6651874445752588315, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: -4688881947154381634, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: -3461017824276629771, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: -7983905677485671909, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: 2497231020727322822, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: -3925603980791103164, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: -1027108563761065434, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: 534689162724722135, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: 830340621222272078, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: 6595129023522336727, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: -1272865208519347289, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: 6980378182328293959, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: -9109461687528807405, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: 8623334896960596401, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  - {fileID: -6102047441760894632, guid: 396714853fb5340759ec7bcea89306ce, type: 3}
+  m_MinSpeed: 1
+  m_MaxSpeed: 1
+  m_AnimationStartTime: 0
+  m_AnimationStartFrame: 0
+  m_TileColliderType: 1

@@ -3,7 +3,17 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Ground
+  - PushRight
+  - PushLeft
+  - PushUp
+  - PushDown
+  - PullLeft
+  - PullRight
+  - PullDown
+  - PullUp
+  - Trash
   layers:
   - Default
   - TransparentFX
