@@ -1,2 +1,4 @@
 # TigerHacks-Gravity-Guy
-All of the code to run the game on Unity is in the folder.
+If you want to play the game, you can open it as a Unity Project.
+
+We'll try to stick an executable in there at some point to make it easier to run.
