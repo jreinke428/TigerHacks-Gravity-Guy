@@ -12,9 +12,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13b75c95f34a00d4e8c04f76b73312e6, type: 3}
   m_Name: VerLasers
   m_EditorClassIdentifier: 
-  m_AnimatedSprites: []
+  m_AnimatedSprites:
+  - {fileID: -7580912611684200689, guid: 50e1fc5fde779434e8eafbce9be3589d, type: 3}
+  - {fileID: -752289186047494415, guid: 50e1fc5fde779434e8eafbce9be3589d, type: 3}
+  - {fileID: 5741332668970926345, guid: 50e1fc5fde779434e8eafbce9be3589d, type: 3}
+  - {fileID: -4740147577320327148, guid: 50e1fc5fde779434e8eafbce9be3589d, type: 3}
+  - {fileID: 4727513044356926643, guid: 50e1fc5fde779434e8eafbce9be3589d, type: 3}
   m_MinSpeed: 1
   m_MaxSpeed: 1
   m_AnimationStartTime: 0
   m_AnimationStartFrame: 0
-  m_TileColliderType: 0
+  m_TileColliderType: 2
