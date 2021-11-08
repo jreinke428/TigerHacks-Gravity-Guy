@@ -79,16 +79,10 @@ public class GridScript : MonoBehaviour
         if(curInput == "push" && ui.GetComponent<UIController>().pushNums > 0)
         {
             PlacePushTile(pos);
-            ui.GetComponent<UIController>().pushNums -= 1;
-            _audioSource.clip = _pushPlace;
-            _audioSource.Play();
         }
         else if(curInput == "pull" && ui.GetComponent<UIController>().pullNums > 0)
         {
             PlacePullTile(pos);
-            ui.GetComponent<UIController>().pullNums -= 1;
-            _audioSource.clip = _pullPlace;
-            _audioSource.Play();
         }
         else if(curInput == "gravity")
         {
@@ -113,7 +107,10 @@ public class GridScript : MonoBehaviour
     {
         Vector3Int tilePos = grid.LocalToCell(pos);
         int direction = ClosestEdge(pos, tilePos);
-        if (direction != 5 && CheckToolGrid(tilePos)) { 
+        if (direction != 5 && CheckToolGrid(tilePos)) {
+            ui.GetComponent<UIController>().pushNums -= 1;
+            _audioSource.clip = _pushPlace;
+            _audioSource.Play();
             toolMap.SetTile(tilePos, pushTiles[direction]);
             PlacePushGravity(tilePos, direction);
         }   
@@ -125,6 +122,9 @@ public class GridScript : MonoBehaviour
         int direction = ClosestEdge(pos, tilePos);
         if (direction != 5 && CheckToolGrid(tilePos))
         {
+            ui.GetComponent<UIController>().pullNums -= 1;
+            _audioSource.clip = _pullPlace;
+            _audioSource.Play();
             toolMap.SetTile(tilePos, pullTiles[direction]);
             PlacePullGravity(tilePos, direction);
         }
